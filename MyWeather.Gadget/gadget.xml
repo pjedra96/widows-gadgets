@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<gadget>
+  <name>Weather Gadget</name>
+  <version>1.0.0.0</version>
+  <author name="Piotr Jedra">
+    <info url="http://github.com/pjedra96/windows-weather-gadget" text="github.com/pjedra96/windows-weather-gadget"/>
+    <logo src="./images/icon.png"/>
+  </author>
+  <copyright>P.Jedra © 2023</copyright>
+  <description>Get the latest weather info for a place of your choice</description>
+  <icons>
+    <icon width="130" height="67" src="./images/icon.png"/>
+  </icons>
+  <hosts>
+    <host name="sidebar">
+      <autoscaleDPI>true</autoscaleDPI>
+      <base type="HTML" apiVersion="1.0.0" src="weather.html"/>
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0"/>
+      <defaultImage src="./images/drag.png" height="20" width="20"/>
+    </host>
+  </hosts>
+</gadget>

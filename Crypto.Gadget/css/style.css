@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
+
+
+body{
+    height: 185px;
+    width:180px;
+    margin-left: 0px;
+}
+
+#gadgetContent
+{
+    width: 190px;
+    height: 185px;
+    margin-left:0px;
+    margin-bottom:0px;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    background: #161616;
+}
+
+.coin{
+    display: block;
+    width: 190px;
+    height: 30px;
+    border-radius: 2px;
+    border-bottom: 1px solid white;
+    margin-left:0px;
+    font-family: 'Mukta', sans-serif;
+}
+
+
+#currency_label{
+    color:white;
+    font-family: 'Mukta', sans-serif;
+}
+
+#currency_select{
+    background:darkgrey;
+    margin:1px solid darkgrey;
+}
+
+.coin .coin-logo{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-top:5px;
+    margin-left:5px;
+    margin-right:5px;
+    place-items: center;
+}
+
+.coin .coin-logo img{
+    height: 20px;
+}
+
+.coin .coin-name{
+    width: 50px;
+    height: 20px;
+    float: left;
+    align-items: center;
+}
+
+.coin .coin-name h3{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.coin .coin-price{
+    width: 60px;
+    height: 20px;
+    align-items: center;
+    margin-left: auto;
+    text-align: left;
+}
+
+.coin .coin-price .price{
+    display:block;
+    height:10px;
+    font-size: 13px;
+    color: #aaa;
+    font-weight: 700;
+}
+
+.coin .coin-price .change{
+    display:block;
+    height:10px;
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.coin.rising{
+    background-color: darkgreen;
+}
+
+.coin.rising .coin-price .price{
+    color: #30ff20;
+}
+
+.coin.falling{
+    background-color: darkred;
+}
+
+.coin.falling .coin-price .price{
+    color: #ff4040;
+}

@@ -1,0 +1,24 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Crypto Price Gadget</title>
+        <link type="text/css" rel="stylesheet" href="./css/style.css">
+        <link type="text/css" rel="stylesheet" href="./css/Main.min.css">
+        <script src="./js/index.js"></script>
+        <script>
+            System.Gadget.settingsUI = "settings.html";
+            System.Gadget.Settings.write("currency", "pln");
+        </script>
+        <meta http-equiv="Content-Type" content="text/html; charset=Unicode" />
+    </head>
+    <body onload="getCryptoData('pln')">
+        <label id="currency_label" for="currency">Currency</label>
+        <select id="currency" name="currency" onchange="getCryptoData(this.value)">
+            <option value="pln">PLN</option>
+            <option value="gbp">GBP</option>
+            <option value="eur">EUR</option>
+            <option value="usd">USD</option>
+        </select>
+        <div id="gadgetContent"></div>
+    </body>
+
+</html>
